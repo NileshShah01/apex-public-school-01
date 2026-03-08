@@ -104,8 +104,8 @@ gap 12px;
 
 .school-logo
 {
-width:50px;
-height:50px;
+width:48px;
+height:48px;
 object-fit:contain;
 }
 
@@ -141,7 +141,7 @@ padding 0;
 .nav-menu a
 {
 padding:10px 16px;
-color:white;
+color:Blue;
 text-decoration:none;
 font-size:14px;
 font-weight:500;
@@ -274,7 +274,7 @@ body {
 
 .header-top
 {
-padding:6px 0;
+padding:4px 0;
 background:white;
 border-bottom:1px solid #e5e7eb;
 }
@@ -284,6 +284,7 @@ border-bottom:1px solid #e5e7eb;
 display:flex;
 align-items:center;
 justify-content:space-between;
+flex-wrap:nowrap;
 }
 
 .logo-section {
@@ -327,8 +328,11 @@ justify-content:space-between;
     background: var(--primary-color);
 }
 
-.navbar .container {
-    position: relative;
+.navbar .container
+{
+display:flex;
+align-items:center;
+justify-content:flex-end;
 }
 
 .menu-toggle {
@@ -1808,6 +1812,7 @@ justify-content:space-between;
 "
 
 Observation: Create successful: /app/school-website/style.css
+
 
 
 
