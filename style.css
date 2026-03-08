@@ -62,21 +62,38 @@ padding 0;
 
 .nav-menu a
 {
-text-decoration none;
-font-size 14px;
-color #1E40AF;
-font-weight 500;
+position:relative;
+text-decoration:none;
+font-size:14px;
+color:#1E40AF;
+font-weight:500;
+padding:6px 2px;
+transition:color 0.3s ease;
 }
 
 .nav-menu a:hover
 {
-color #2563EB;
+color:#2563EB;
 }
-.header-top
+    .nav-menu a::after
 {
-background white
-padding 8px 0
-border-bottom 1px solid #e5e7eb
+content:"";
+position:absolute;
+left:0;
+bottom:-4px;
+width:0;
+height:2px;
+background:#2563EB;
+transition:width 0.35s ease;
+}
+
+.nav-menu a:hover::after
+{
+width:100%;
+}
+.nav-menu a.active::after
+{
+width:100%;
 }
 
 .header-flex
@@ -1713,4 +1730,5 @@ body {
 "
 
 Observation: Create successful: /app/school-website/style.css
+
 
