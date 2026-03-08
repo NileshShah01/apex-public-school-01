@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inquiry Form - Apex Public School Anjani Bazar</title>
+    <meta name="description" content="Submit your inquiry to Apex Public School for admissions and other information.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header" data-testid="main-header">
+        <div class="header-top">
+            <div class="container">
+                <div class="header-content">
+                    <div class="logo-section">
+                        <img src="images/ApexPublicSchoolLogo.png" alt="Apex Public School Logo" class="school-logo" data-testid="school-logo">
+                    </div>
+                    <div class="school-info">
+                        <h1 class="school-name" data-testid="school-name">Apex Public School</h1>
+                        <p class="school-tagline">Anjani Bazar</p>
+                        <div class="school-codes">
+                            <span>UDISE: 10171706503</span>
+                            <span class="separator">|</span>
+                            <span>Registration: 2111449</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <nav class="navbar" data-testid="main-navigation">
+            <div class="container">
+                <button class="menu-toggle" data-testid="menu-toggle" aria-label="Toggle menu">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <ul class="nav-menu" data-testid="nav-menu">
+                    <li><a href="index.html" data-testid="nav-home">Home</a></li>
+                    <li><a href="about.html" data-testid="nav-about">About</a></li>
+                    <li><a href="academics.html" data-testid="nav-academics">Academics</a></li>
+                    <li><a href="admissions.html" data-testid="nav-admissions">Admissions</a></li>
+                    <li><a href="facilities.html" data-testid="nav-facilities">Facilities</a></li>
+                    <li><a href="gallery.html" data-testid="nav-gallery">Gallery</a></li>
+                    <li><a href="contact.html" data-testid="nav-contact">Contact</a></li>
+                    <li><a href="inquiry.html" class="active" data-testid="nav-inquiry">Inquiry</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="menu-overlay" data-testid="menu-overlay"></div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header" data-testid="page-header">
+        <div class="container">
+            <h1>Inquiry Form</h1>
+            <p>We'd love to hear from you</p>
+        </div>
+    </section>
+
+    <!-- Inquiry Form Content -->
+    <section class="inquiry-page" data-testid="inquiry-page">
+        <div class="container">
+            <div class="inquiry-intro">
+                <p>Please fill out the form below and we will get back to you as soon as possible. For immediate assistance, you can call us at <strong>8084243031</strong> or WhatsApp us.</p>
+            </div>
+
+            <div class="form-container">
+                <form class="inquiry-form-page" action="https://formspree.io/f/YOUR_FORM_ID" method="POST" data-testid="inquiry-form-page">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="parent-name">Parent Name *</label>
+                            <input type="text" id="parent-name" name="parent_name" required data-testid="parent-name-input">
+                        </div>
+                        <div class="form-group">
+                            <label for="mobile">Mobile Number *</label>
+                            <input type="tel" id="mobile" name="mobile" pattern="[0-9]{10}" required data-testid="mobile-input">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" data-testid="email-input">
+                        </div>
+                        <div class="form-group">
+                            <label for="student-class">Student Class *</label>
+                            <select id="student-class" name="student_class" required data-testid="class-select">
+                                <option value="">Select Class</option>
+                                <option value="playgroup">Play Group</option>
+                                <option value="nursery">Nursery</option>
+                                <option value="lkg">LKG</option>
+                                <option value="ukg">UKG</option>
+                                <option value="class1">Class 1</option>
+                                <option value="class2">Class 2</option>
+                                <option value="class3">Class 3</option>
+                                <option value="class4">Class 4</option>
+                                <option value="class5">Class 5</option>
+                                <option value="class6">Class 6</option>
+                                <option value="class7">Class 7</option>
+                                <option value="class8">Class 8</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="6" placeholder="Tell us about your inquiry..." data-testid="message-textarea"></textarea>
+                    </div>
+                    <button type="submit" class="btn-primary btn-block" data-testid="submit-inquiry-btn">Submit Inquiry</button>
+                </form>
+            </div>
+
+            <div class="quick-contact">
+                <h3>Or Contact Us Directly</h3>
+                <div class="quick-contact-grid">
+                    <a href="tel:8084243031" class="quick-contact-btn" data-testid="call-btn">
+                        <i class="fas fa-phone"></i>
+                        <span>Call Now</span>
+                    </a>
+                    <a href="https://wa.me/918084243031" class="quick-contact-btn" target="_blank" data-testid="whatsapp-contact-btn">
+                        <i class="fab fa-whatsapp"></i>
+                        <span>WhatsApp</span>
+                    </a>
+                    <a href="mailto:Apexpublicschool61@gmail.com" class="quick-contact-btn" data-testid="email-btn">
+                        <i class="fas fa-envelope"></i>
+                        <span>Email</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" data-testid="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>Apex Public School</h3>
+                    <p>Quality education for a brighter future</p>
+                    <p class="footer-tagline">Anjani Bazar, Parsa, Saran</p>
+                </div>
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html" data-testid="footer-home">Home</a></li>
+                        <li><a href="about.html" data-testid="footer-about">About</a></li>
+                        <li><a href="academics.html" data-testid="footer-academics">Academics</a></li>
+                        <li><a href="admissions.html" data-testid="footer-admissions">Admissions</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>More Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="facilities.html" data-testid="footer-facilities">Facilities</a></li>
+                        <li><a href="gallery.html" data-testid="footer-gallery">Gallery</a></li>
+                        <li><a href="contact.html" data-testid="footer-contact">Contact</a></li>
+                        <li><a href="inquiry.html" data-testid="footer-inquiry">Inquiry</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Contact Info</h3>
+                    <p><i class="fas fa-phone"></i> 8084243031</p>
+                    <p><i class="fas fa-envelope"></i> Apexpublicschool61@gmail.com</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Anjani Bazar, Parsa, Saran, Bihar</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Apex Public School. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating Buttons -->
+    <a href="https://wa.me/918084243031" class="floating-btn whatsapp-btn" target="_blank" data-testid="whatsapp-btn" aria-label="WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+    <a href="inquiry.html" class="floating-btn query-btn" data-testid="query-btn" aria-label="Inquiry">
+        <i class="fas fa-question"></i>
+    </a>
+
+    <script src="script.js"></script>
+</body>
+</html>
