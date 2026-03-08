@@ -3,7 +3,98 @@
     padding: 0;
     box-sizing: border-box;
 }
+.hero-content
+{
+position:absolute;
+top:50%;
+left:50%;
+transform:translate(-50%,-50%);
+text-align:center;
+color:white;
+z-index:5;
+}
 
+.hero-title
+{
+font-size:48px;
+font-weight:700;
+margin-bottom:10px;
+text-shadow:0 4px 15px rgba(0,0,0,0.5);
+}
+
+.hero-subtitle
+{
+font-size:18px;
+margin-bottom:20px;
+opacity:0.9;
+}
+
+.hero-buttons
+{
+display:flex;
+gap:15px;
+justify-content:center;
+}
+.btn-admission
+{
+background:#f59e0b;
+color:white;
+padding:12px 22px;
+border-radius:6px;
+text-decoration:none;
+font-weight:600;
+transition:0.3s;
+}
+
+.btn-admission:hover
+{
+background:#d97706;
+transform:translateY(-2px);
+}
+
+.btn-contact
+{
+background:white;
+color:#1E40AF;
+padding:12px 22px;
+border-radius:6px;
+text-decoration:none;
+font-weight:600;
+transition:0.3s;
+}
+
+.btn-contact:hover
+{
+background:#f1f5f9;
+}
+.light-sweep
+{
+position:absolute;
+top:0;
+left:-100%;
+width:50%;
+height:100%;
+background:linear-gradient(
+90deg,
+transparent,
+rgba(255,255,255,0.3),
+transparent
+);
+animation:lightMove 6s infinite;
+}
+
+@keyframes lightMove
+{
+0%
+{
+left:-100%;
+}
+
+100%
+{
+left:150%;
+}
+}
 .logo-school
 {
 display flex;
@@ -1717,6 +1808,7 @@ justify-content:space-between;
 "
 
 Observation: Create successful: /app/school-website/style.css
+
 
 
 
