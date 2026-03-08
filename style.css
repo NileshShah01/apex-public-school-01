@@ -3,6 +3,75 @@
     padding: 0;
     box-sizing: border-box;
 }
+.header
+{
+background white;
+border-bottom 1px solid #e5e7eb;
+}
+
+.header-row
+{
+display flex;
+align-items center;
+justify-content space-between;
+padding 8px 0;
+}
+
+.logo-school
+{
+display flex;
+align-items center;
+gap 12px;
+}
+
+.school-logo
+{
+width 55px;
+height 55px;
+object-fit contain;
+}
+
+.school-name
+{
+font-size 24px;
+color #1E40AF;
+margin 0;
+}
+
+.school-tagline
+{
+font-size 13px;
+margin 2px 0;
+color #555;
+}
+
+.school-codes
+{
+font-size 11px;
+color #777;
+}
+
+.nav-menu
+{
+display flex;
+gap 22px;
+list-style none;
+margin 0;
+padding 0;
+}
+
+.nav-menu a
+{
+text-decoration none;
+font-size 14px;
+color #1E40AF;
+font-weight 500;
+}
+
+.nav-menu a:hover
+{
+color #2563EB;
+}
 .header-top
 {
 background white
@@ -1644,3 +1713,4 @@ body {
 "
 
 Observation: Create successful: /app/school-website/style.css
+
