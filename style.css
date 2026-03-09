@@ -1815,5 +1815,65 @@ Observation: Create successful: /app/school-website/style.css
 
 
 
+/* ==================== HOMEPAGE ADVANCED SECTIONS ==================== */
+.quick-nav {
+    padding: 60px 20px;
+    background: #f8fafc;
+    text-align: center;
+}
+.quick-nav h2 { color: #1E40AF; margin-bottom: 30px; }
+
+.nav-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 20px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.nav-card {
+    background: white;
+    padding: 25px 15px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: 0.3s;
+    text-align: center;
+}
+.nav-card:hover { transform: translateY(-8px); }
+
+.nav-card i { font-size: 32px; color: #1E40AF; margin-bottom: 12px; }
+
+/* Testimonials */
+.testimonials {
+    padding: 60px 20px;
+    background: white;
+    text-align: center;
+}
+.testimonial-slider {
+    max-width: 700px;
+    margin: auto;
+    overflow: hidden;
+}
+.testimonial {
+    display: none;
+    padding: 30px;
+    background: #f8fafc;
+    border-radius: 10px;
+}
+.testimonial.active { display: block; }
+
+/* Events & Achievements */
+.events-grid, .achievements-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 20px;
+    padding: 40px 20px;
+}
+.event-card, .achievement-card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
 
 
